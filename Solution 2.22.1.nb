@@ -1,0 +1,188 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6112,        179]
+NotebookOptionsPosition[      5536,        154]
+NotebookOutlinePosition[      5884,        169]
+CellTagsIndexPosition[      5841,        166]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"F", "[", 
+   RowBox[{"a_", ",", "b_"}], "]"}], ":=", 
+  RowBox[{"(", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"aDigits", "=", 
+     RowBox[{"IntegerDigits", "[", "a", "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"bDigits", "=", 
+     RowBox[{"IntegerDigits", "[", "b", "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"bulls", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"cows", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"cowsList", "=", 
+     RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Do", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"i", "<=", 
+          RowBox[{"Length", "[", "aDigits", "]"}]}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+             "bDigits", "\[LeftDoubleBracket]", "i", 
+              "\[RightDoubleBracket]"}], "\[Equal]", 
+             RowBox[{
+             "aDigits", "\[LeftDoubleBracket]", "i", 
+              "\[RightDoubleBracket]"}]}], ",", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"bulls", " ", "=", " ", 
+              RowBox[{"bulls", " ", "+", " ", "1"}]}], ";"}]}], 
+           "\[IndentingNewLine]", "]"}], ";"}]}], "\[IndentingNewLine]", 
+        "]"}], ";"}], "\[IndentingNewLine]", ",", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", " ", "1", ",", " ", 
+        RowBox[{"Length", "[", "bDigits", "]"}]}], "}"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Do", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Count", "[", 
+           RowBox[{"aDigits", ",", " ", 
+            RowBox[{
+            "bDigits", "\[LeftDoubleBracket]", "i", 
+             "\[RightDoubleBracket]"}]}], "]"}], ">", "0"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{"MemberQ", "[", 
+             RowBox[{"cowsList", ",", 
+              RowBox[{
+              "bDigits", "\[LeftDoubleBracket]", "i", 
+               "\[RightDoubleBracket]"}]}], "]"}], ",", ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"cows", "=", 
+              RowBox[{"cows", "+", "1"}]}], ";", "\[IndentingNewLine]", 
+             RowBox[{"cowsList", "=", 
+              RowBox[{"Append", "[", 
+               RowBox[{"cowsList", ",", " ", 
+                RowBox[{
+                "bDigits", "\[LeftDoubleBracket]", "i", 
+                 "\[RightDoubleBracket]"}]}], "]"}]}], ";"}]}], 
+           "\[IndentingNewLine]", "]"}], ";"}]}], "\[IndentingNewLine]", 
+        "]"}], ";"}], "\[IndentingNewLine]", ",", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", " ", "1", ",", " ", 
+        RowBox[{"Length", "[", "bDigits", "]"}]}], "}"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"bulls", ",", " ", "cows"}], "}"}]}], "\[IndentingNewLine]", 
+   ")"}]}]], "Input",
+ CellChangeTimes->{{3.628766065532412*^9, 3.628766092665737*^9}, {
+   3.628766125681788*^9, 3.6287661278561735`*^9}, {3.62876622200379*^9, 
+   3.6287662481075*^9}, 3.628766284773707*^9, {3.628766317611066*^9, 
+   3.6287663856189218`*^9}, {3.628766449024335*^9, 3.6287667089794817`*^9}, 
+   3.6287668029885273`*^9, {3.628766858808997*^9, 3.628766973843338*^9}, {
+   3.6287670849849834`*^9, 3.6287672135891876`*^9}, {3.6287672694266624`*^9, 
+   3.6287673775842857`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"F", "[", 
+  RowBox[{"1234", ",", "6241"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6287661008570566`*^9, 3.628766111927534*^9}, {
+  3.6287663949214907`*^9, 3.6287664043076487`*^9}, {3.6287667651793995`*^9, 
+  3.628766796055923*^9}, {3.6287674401222467`*^9, 3.6287674771984015`*^9}, {
+  3.628767522838864*^9, 3.628767524302045*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "3"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.6287673848473115`*^9, {3.6287674306984515`*^9, 3.6287674789851427`*^9}, 
+   3.62876752514163*^9, 3.628767765828967*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"F", "[", 
+  RowBox[{"12345", ",", "62541"}], "]"}]], "Input",
+ CellChangeTimes->{{3.628767480356017*^9, 3.6287675302672453`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"2", ",", "4"}], "}"}]], "Output",
+ CellChangeTimes->{{3.628767492311777*^9, 3.6287675313297496`*^9}, {
+  3.628767761069786*^9, 3.628767767547724*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"F", "[", 
+  RowBox[{"111111", ",", "11"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6287675350962763`*^9, 3.628767535736903*^9}, {
+  3.6287677739637823`*^9, 3.628767779855138*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"2", ",", "1"}], "}"}]], "Output",
+ CellChangeTimes->{3.628767780933268*^9}]
+}, Open  ]]
+},
+WindowSize->{767, 852},
+WindowMargins->{{124, Automatic}, {Automatic, 101}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3623, 86, 512, "Input"],
+Cell[CellGroupData[{
+Cell[4206, 110, 354, 6, 31, "Input"],
+Cell[4563, 118, 217, 5, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4817, 128, 153, 3, 31, "Input"],
+Cell[4973, 133, 190, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5200, 142, 202, 4, 31, "Input"],
+Cell[5405, 148, 115, 3, 31, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
