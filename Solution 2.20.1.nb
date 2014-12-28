@@ -1,0 +1,518 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13695,        509]
+NotebookOptionsPosition[     13046,        481]
+NotebookOutlinePosition[     13393,        496]
+CellTagsIndexPosition[     13350,        493]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"f", "=", 
+  RowBox[{
+   RowBox[{"sin", "[", 
+    RowBox[{"x", "+", "1"}], "]"}], 
+   RowBox[{"cos", "[", "x", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.6287651851147223`*^9, 3.6287652302706876`*^9}, {
+  3.628765346182384*^9, 3.6287653510000324`*^9}, {3.6287656085959263`*^9, 
+  3.628765610593192*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"cos", "[", "x", "]"}], " ", 
+  RowBox[{"sin", "[", 
+   RowBox[{"1", "+", "x"}], "]"}]}]], "Output",
+ CellChangeTimes->{3.6287656219596605`*^9, 3.628765653484779*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"der", "=", 
+  RowBox[{"D", "[", 
+   RowBox[{"f", ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "10"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.628765239858629*^9, 3.628765240499256*^9}, {
+  3.62876533459768*^9, 3.628765335405657*^9}, {3.6287653729507694`*^9, 
+  3.628765415419639*^9}, {3.628765477393095*^9, 3.628765478408725*^9}, {
+  3.628765580109701*^9, 3.6287655854285803`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"252", " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "5", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "5", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}], "+", 
+  RowBox[{"210", " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "4", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "6", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}]}], "+", 
+  RowBox[{"210", " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "4", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "6", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}], "+", 
+  RowBox[{"120", " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "3", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "7", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}]}], "+", 
+  RowBox[{"120", " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "3", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "7", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}], "+", 
+  RowBox[{"45", " ", 
+   RowBox[{
+    SuperscriptBox["sin", "\[Prime]\[Prime]",
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "8", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}]}], "+", 
+  RowBox[{"45", " ", 
+   RowBox[{
+    SuperscriptBox["cos", "\[Prime]\[Prime]",
+     MultilineFunction->None], "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "8", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}], "+", 
+  RowBox[{"10", " ", 
+   RowBox[{
+    SuperscriptBox["sin", "\[Prime]",
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "9", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}]}], "+", 
+  RowBox[{"10", " ", 
+   RowBox[{
+    SuperscriptBox["cos", "\[Prime]",
+     MultilineFunction->None], "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "9", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}], "+", 
+  RowBox[{
+   RowBox[{"sin", "[", 
+    RowBox[{"1", "+", "x"}], "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "10", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}]}], "+", 
+  RowBox[{
+   RowBox[{"cos", "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "10", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}]}]], "Output",
+ CellChangeTimes->{
+  3.6287652416816454`*^9, {3.6287653936821556`*^9, 3.6287654175602736`*^9}, 
+   3.628765480029216*^9, {3.628765581547208*^9, 3.62876558643709*^9}, 
+   3.628765622053412*^9, 3.628765653578529*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", "der", "]"}]], "Input",
+ CellChangeTimes->{{3.628765428133107*^9, 3.628765432301072*^9}, {
+  3.628765485188994*^9, 3.6287654854858694`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"252", " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "5", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "5", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}], "+", 
+  RowBox[{"210", " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "4", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "6", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}]}], "+", 
+  RowBox[{"210", " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "4", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "6", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}], "+", 
+  RowBox[{"120", " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "3", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "7", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}]}], "+", 
+  RowBox[{"120", " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "3", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "7", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}], "+", 
+  RowBox[{"45", " ", 
+   RowBox[{
+    SuperscriptBox["sin", "\[Prime]\[Prime]",
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "8", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}]}], "+", 
+  RowBox[{"45", " ", 
+   RowBox[{
+    SuperscriptBox["cos", "\[Prime]\[Prime]",
+     MultilineFunction->None], "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "8", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}], "+", 
+  RowBox[{"10", " ", 
+   RowBox[{
+    SuperscriptBox["sin", "\[Prime]",
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "9", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}]}], "+", 
+  RowBox[{"10", " ", 
+   RowBox[{
+    SuperscriptBox["cos", "\[Prime]",
+     MultilineFunction->None], "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "9", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}], "+", 
+  RowBox[{
+   RowBox[{"sin", "[", 
+    RowBox[{"1", "+", "x"}], "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "10", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}]}], "+", 
+  RowBox[{
+   RowBox[{"cos", "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "10", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}]}]], "Output",
+ CellChangeTimes->{3.628765433363577*^9, 3.6287654873118725`*^9, 
+  3.6287656220690365`*^9, 3.628765653578529*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", "der", "]"}]], "Input",
+ CellChangeTimes->{{3.6287656635295296`*^9, 3.6287656693695555`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"252", " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "5", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "5", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}], "+", 
+  RowBox[{"210", " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "4", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "6", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}]}], "+", 
+  RowBox[{"210", " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "4", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "6", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}], "+", 
+  RowBox[{"120", " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "3", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "7", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}]}], "+", 
+  RowBox[{"120", " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "3", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "7", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}], "+", 
+  RowBox[{"45", " ", 
+   RowBox[{
+    SuperscriptBox["sin", "\[Prime]\[Prime]",
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "8", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}]}], "+", 
+  RowBox[{"45", " ", 
+   RowBox[{
+    SuperscriptBox["cos", "\[Prime]\[Prime]",
+     MultilineFunction->None], "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "8", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}], "+", 
+  RowBox[{"10", " ", 
+   RowBox[{
+    SuperscriptBox["sin", "\[Prime]",
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "9", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}]}], "+", 
+  RowBox[{"10", " ", 
+   RowBox[{
+    SuperscriptBox["cos", "\[Prime]",
+     MultilineFunction->None], "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "9", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}], "+", 
+  RowBox[{
+   RowBox[{"sin", "[", 
+    RowBox[{"1", "+", "x"}], "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["cos", 
+     TagBox[
+      RowBox[{"(", "10", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", "x", "]"}]}], "+", 
+  RowBox[{
+   RowBox[{"cos", "[", "x", "]"}], " ", 
+   RowBox[{
+    SuperscriptBox["sin", 
+     TagBox[
+      RowBox[{"(", "10", ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"1", "+", "x"}], "]"}]}]}]], "Output",
+ CellChangeTimes->{3.6287656709759445`*^9}]
+}, Open  ]]
+},
+WindowSize->{767, 872},
+WindowMargins->{{97, Automatic}, {116, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 326, 8, 31, "Input"],
+Cell[909, 32, 200, 5, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1146, 42, 417, 9, 31, "Input"],
+Cell[1566, 53, 3780, 137, 92, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5383, 195, 180, 3, 31, "Input"],
+Cell[5566, 200, 3679, 135, 92, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9282, 340, 137, 2, 31, "Input"],
+Cell[9422, 344, 3608, 134, 92, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
