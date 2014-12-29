@@ -1,0 +1,158 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5170,        149]
+NotebookOptionsPosition[      4703,        128]
+NotebookOutlinePosition[      5051,        143]
+CellTagsIndexPosition[      5008,        140]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"domino", " ", "=", " ", 
+   RowBox[{"Table", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"j", "\[GreaterEqual]", "i"}], ",", " ", 
+       RowBox[{
+        RowBox[{"ToString", "[", 
+         RowBox[{"i", "-", "1"}], "]"}], "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"j", "-", "1"}], "]"}]}], ",", " ", "\"\<\>\""}], "]"}], 
+     "\[IndentingNewLine]", ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "7"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", "7"}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6288667158060656`*^9, 3.6288668906321597`*^9}, {
+  3.628866927125821*^9, 3.62886694260598*^9}, {3.6288669753662467`*^9, 
+  3.628866975522498*^9}, {3.628867009725232*^9, 3.6288670113327312`*^9}, {
+  3.6288670518343153`*^9, 3.628867090391412*^9}, {3.62886721804589*^9, 
+  3.628867221394697*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"domino", "//", "MatrixForm"}]], "Input",
+ CellChangeTimes->{{3.628866821489648*^9, 3.6288668256812572`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"\<\"00\"\>", "\<\"01\"\>", "\<\"02\"\>", "\<\"03\"\>", "\<\"04\"\>", "\
+\<\"05\"\>", "\<\"06\"\>"},
+     {"\<\"\"\>", "\<\"11\"\>", "\<\"12\"\>", "\<\"13\"\>", "\<\"14\"\>", "\<\
+\"15\"\>", "\<\"16\"\>"},
+     {"\<\"\"\>", "\<\"\"\>", "\<\"22\"\>", "\<\"23\"\>", "\<\"24\"\>", \
+"\<\"25\"\>", "\<\"26\"\>"},
+     {"\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"33\"\>", "\<\"34\"\>", "\<\"35\
+\"\>", "\<\"36\"\>"},
+     {"\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"44\"\>", "\<\"45\"\
+\>", "\<\"46\"\>"},
+     {"\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", \
+"\<\"55\"\>", "\<\"56\"\>"},
+     {"\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", \
+"\<\"66\"\>"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{
+  3.6288668264540796`*^9, {3.6288668761239862`*^9, 3.6288668925208783`*^9}, {
+   3.6288669329710712`*^9, 3.628866944082525*^9}, 3.6288669771798615`*^9, 
+   3.6288670131331897`*^9, {3.6288670737912207`*^9, 3.6288670918536797`*^9}, {
+   3.6288672055718813`*^9, 3.628867229488617*^9}, {3.628867450825138*^9, 
+   3.628867472401455*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"count", " ", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Do", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Do", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"domino", "\[LeftDoubleBracket]", 
+           RowBox[{"i", ",", "j"}], "\[RightDoubleBracket]"}], "\[NotEqual]", 
+          "\"\<\>\""}], ",", " ", 
+         RowBox[{"count", "=", 
+          RowBox[{"count", "+", "1"}]}]}], "]"}], "\[IndentingNewLine]", ",", 
+       RowBox[{"{", 
+        RowBox[{"j", ",", " ", "1", ",", " ", 
+         RowBox[{"Length", "[", 
+          RowBox[{
+          "domino", "\[LeftDoubleBracket]", "i", "\[RightDoubleBracket]"}], 
+          "]"}]}], "}"}]}], "\[IndentingNewLine]", "]"}], ";"}], 
+    "\[IndentingNewLine]", ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", " ", "1", ",", " ", 
+      RowBox[{"Length", "[", "domino", "]"}]}], "}"}]}], 
+   "\[IndentingNewLine]", "]"}], 
+  ";"}], "\[IndentingNewLine]", "count"}], "Input",
+ CellChangeTimes->{{3.62886709459191*^9, 3.628867191883875*^9}, {
+  3.6288672263511496`*^9, 3.628867227885044*^9}, {3.6288673573694897`*^9, 
+  3.62886746915864*^9}}],
+
+Cell[BoxData["28"], "Output",
+ CellChangeTimes->{{3.6288671926512337`*^9, 3.628867229488617*^9}, {
+  3.628867450840763*^9, 3.6288674724170804`*^9}}]
+}, Open  ]]
+},
+WindowSize->{767, 852},
+WindowMargins->{{149, Automatic}, {112, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 928, 22, 72, "Input"],
+Cell[CellGroupData[{
+Cell[1511, 46, 132, 2, 31, "Input"],
+Cell[1646, 50, 1611, 35, 131, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3294, 90, 1242, 31, 192, "Input"],
+Cell[4539, 123, 148, 2, 31, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
